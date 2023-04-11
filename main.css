@@ -1,8 +1,19 @@
-::placeholder {
-  color: #cad4e1;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
 }
 
-.h1 {
-  padding-right: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+::placeholder {
+  color: #cad4e1;
+  font-size: 1em;
+}
+
+.my-input {
+  size: 10rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 50px;
 }
