@@ -1,6 +1,5 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
 }
 
 ::placeholder {
@@ -8,12 +7,14 @@
   font-size: 1em;
 }
 
-.my-input {
-  size: 10rem;
+.container {
+  text-align: center;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-top: 50px;
+h1 {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 60px;
+  font-size: large;
+  color: lightslategrey;
 }
