@@ -5,11 +5,10 @@
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-
 }
 
 .list {
-  background-color: bisque;
+  background-color: rgb(147, 101, 45);
   padding: 3em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
