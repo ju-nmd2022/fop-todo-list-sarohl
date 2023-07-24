@@ -1,23 +1,12 @@
-const button = document.getElementById("taskButton");
-const taskField = document.getElementById("myInput");
-const jd = document.getElementById("listForTasks");
-// const taskField = myInput.value;
-let newArray = [];
-
-button.addEventListener("click", function () {
-  addTask();
-});
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
 
 function addTask() {
-  let inputField = document.getElementById("myInput");
-  const tasks = inputField.value;
-  newArray.push(task);
-
-  localStorage.setItem("tasks", JSON.stringify(newArray));
-  console.log(localStorage.getItem("tasks"));
-}
-
-if (localStorage.getItem("tasks") !== null) {
-  newArray = JSON.parse(localStorage.getItem("tasks"));
-  console.log(newArray);
+  let li = document.createElement("li");
+  li.innerHTML = inputBox.value;
+  listContainer.appendChild(li);
+  let span = document.createElement("span");
+  span.innerHTML = "\u00d7";
+  li.appendChild(span);
+  inputBox.value = "";
 }
