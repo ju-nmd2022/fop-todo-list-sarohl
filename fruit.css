@@ -1,0 +1,25 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.list {
+  background-color: rgb(147, 101, 45);
+  padding: 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cart {
+  background-color: cadetblue;
+  padding: 1rem;
+}
+
+.fruit {
+  font-size: 3em;
+  text-align: center;
+}
