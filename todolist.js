@@ -11,28 +11,26 @@ const addTask = () => {
   li.appendChild(span);
 
   inputBox.value = "";
-  saveData();
+  save();
 };
 
-listOfTasks.addEventListener(
-  "click",
-  function (event) {
-    if (event.target.tagName === "LI") {
-      event.target.classList.toggle("checked");
-      saveData();
-    } else if (event.target.tagName === "SPAN") {
-      event.target.parentElement.remove();
-      saveData();
-    }
-  },
-  false
-);
+const handleClickEvent = (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.classList.toggle("checked");
+    save();
+  } else if (e.target.tagName === "SPAN") {
+    e.target.parentElement.remove();
+    save();
+  }
+};
 
-const saveData = () => {
+listOfTasks.addEventListener("click", handleClickEvent);
+
+function save() {
   localStorage.setItem("data", listOfTasks.innerHTML);
-};
+}
 
-const showTask = () => {
+function viewTask() {
   listOfTasks.innerHTML = localStorage.getItem("data");
-};
-showTask();
+}
+viewTask();
