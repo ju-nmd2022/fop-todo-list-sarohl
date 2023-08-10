@@ -14,7 +14,7 @@ const addTask = () => {
   save();
 };
 
-const handleClickEvent = (e) => {
+const clickEvent = (e) => {
   if (e.target.tagName === "LI") {
     e.target.classList.toggle("checked");
     save();
@@ -24,7 +24,7 @@ const handleClickEvent = (e) => {
   }
 };
 
-listOfTasks.addEventListener("click", handleClickEvent);
+listOfTasks.addEventListener("click", clickEvent);
 
 function save() {
   localStorage.setItem("data", listOfTasks.innerHTML);
