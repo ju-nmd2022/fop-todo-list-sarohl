@@ -34,3 +34,5 @@ function viewTask() {
   listOfTasks.innerHTML = localStorage.getItem("data");
 }
 viewTask();
+
+// lines of code was adapted from https://www.youtube.com/watch?v=G0jO8kUrg-I and by my friend Joel Blomén.
